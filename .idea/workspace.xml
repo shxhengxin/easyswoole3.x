@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbf0f755-5a3d-4ab6-aaf3-b8fb947cb1ca" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/easyswoole" />
+      <path value="$PROJECT_DIR$/vendor/jeremeamia/superclosure" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/task" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/config" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/spl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/utility" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/annotation" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/http" />
+      <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/component" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/validate" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/log" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/trigger" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/mysqli" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/pool" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/ddl" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/orm" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/fast-cache" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/redis" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/redis-pool" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1UxlRqfRHCE8ndh7q2r4IfoFWJL" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/phpstudy/WWW/wshifu-ocs" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\code\easyswoole\App\HttpController" />
+      <recent name="E:\project\code\easyswoole\App" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbf0f755-5a3d-4ab6-aaf3-b8fb947cb1ca" name="Default Changelist" comment="" />
+      <created>1576306121513</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576306121513</updated>
+      <workItem from="1576306122710" duration="2061000" />
+      <workItem from="1576475884323" duration="3417000" />
+      <workItem from="1576486380506" duration="5088000" />
+      <workItem from="1576561887062" duration="489000" />
+      <workItem from="1576743585464" duration="4735000" />
+      <workItem from="1576823781384" duration="10384000" />
+      <workItem from="1577091157706" duration="5346000" />
+      <workItem from="1577169383881" duration="1232000" />
+      <workItem from="1577172373148" duration="13658000" />
+      <workItem from="1577258570558" duration="10212000" />
+      <workItem from="1577322373512" duration="2624000" />
+      <workItem from="1577329971837" duration="7869000" />
+      <workItem from="1577347635949" duration="1243000" />
+      <workItem from="1577353501175" duration="1965000" />
+      <workItem from="1577418236852" duration="3184000" />
+      <workItem from="1577428993501" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
