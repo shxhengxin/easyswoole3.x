@@ -4,6 +4,8 @@ namespace EasySwoole\EasySwoole;
 
 use App\Pool\RedisPool;
 use App\Process\Consumer;
+use App\Websocket\WebSocketEvents;
+use App\Websocket\WebSocketParser;
 use EasySwoole\Component\Di;
 use EasySwoole\EasySwoole\Swoole\EventRegister;
 use EasySwoole\EasySwoole\AbstractInterface\Event;
@@ -14,6 +16,7 @@ use EasySwoole\ORM\DbManager;
 use EasySwoole\Pool\Manager;
 use EasySwoole\Redis\Config\RedisConfig;
 use EasySwoole\Redis\Redis;
+use EasySwoole\Socket\Dispatcher;
 use EasySwoole\Utility\File;
 
 class EasySwooleEvent implements Event
@@ -50,6 +53,27 @@ class EasySwooleEvent implements Event
             ServerManager::getInstance()->getSwooleServer()->addProcess((new Consumer("consumer_{$i}"))->getProcess());
         }
 
+
+
+
+        /**
+         * **************** websocket控制器 **********************
+         */
+        $conf = new \EasySwoole\Socket\Config();
+
+        $conf->setType(\EasySwoole\Socket\Config::WEB_SOCKET);//web_socket
+
+        $conf->setParser(new WebSocketParser());
+        // 创建 Dispatcher 对象 并注入 config 对象
+        $dispatch = new Dispatcher($conf);
+
+        //对象处理
+        $register->set(EventRegister::onMessage, function (\swoole_websocket_server $server, \swoole_websocket_frame $frame) use ($dispatch) {
+            $dispatch->dispatch($server, $frame->data, $frame);
+        });
+        // 注册服务事件
+        $register->add(EventRegister::onOpen, [WebSocketEvents::class, 'onOpen']);
+        $register->add(EventRegister::onClose, [WebSocketEvents::class, 'onClose']);
     }
 
     public static function onRequest(Request $request, Response $response): bool

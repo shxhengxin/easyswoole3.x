@@ -17,11 +17,19 @@ class Route
 
     public  function route()
     {
-        $this->routeCollector->addgroup("/api",function (){
+        $this->routeCollector->addGroup("/api",function (){
             $this->routeCollector->get('/rpc','/api/index/getVideo');
             $this->routeCollector->get('/redis','/api/index/getRedis');
             $this->routeCollector->get('/pub/{f}','/api/index/pub');
         });
+
+
+
+
+        $this->routeCollector->addGroup("/admin",function (){
+            $this->routeCollector->get("/index","/admin/index/getVideo");
+        });
+
 
     }
 }

@@ -814,3 +814,60 @@ Message: [2019-12-24 10:09:45 $28192.0]	WARNING	swSignal_callback (ERRNO 707): U
 [2019-12-25 07:56:49 *4519.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Declaration of App\ResponseMessage\ApiResponse::response() must be compatible with EasySwoole\Http\AbstractInterface\Controller::response(): EasySwoole\Http\Response in /home/vagrant/code/easyswoole/App/HttpController/Api/Index.php on line 13
 [2019-12-25 07:56:49 $4516.0]	WARNING	swManager_check_exit_status: worker#0[pid=4519] abnormal exit, status=255, signal=0
 [2019-12-26 06:07:19 #9853.2]	INFO	Server is shutdown now
+[2019-12-27 08:03:02 @15215.0]	WARNING	swoole_file_put_contents(:728): open(/tmp/pid.pid) failed, Error: Permission denied[13]
+[2019-12-27 08:04:49 @15234.0]	WARNING	swoole_file_put_contents(:728): open(/tmp/pid.pid) failed, Error: Permission denied[13]
+[2019-12-27 10:05:11 *16125.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class '\App\WebSocket\Index' not found in /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php:172
+Stack trace:
+#0 /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(75): EasySwoole\Socket\Dispatcher->getController('\\App\\WebSocket\\...')
+#1 /home/vagrant/code/easyswoole/EasySwooleEvent.php(72): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"class":"Index...', Object(Swoole\WebSocket\Frame))
+#2 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#3 /home/vagrant/code/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(134): call_user_func(Object(Closure), Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 {main}
+  thrown in /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php on line 172
+[2019-12-27 10:05:11 $16122.0]	WARNING	swManager_check_exit_status: worker#0[pid=16125] abnormal exit, status=255, signal=0
+[2019-12-28 03:04:43 *19129.6]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 #19119.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 #19119.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 #19119.2]	INFO	Server is shutdown now
+[2019-12-28 03:04:43 *19123.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19123.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19124.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19124.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19125.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19125.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19128.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19127.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19127.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 03:04:43 *19128.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-12-28 05:58:07 *2919.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Cannot access protected property EasySwoole\Socket\Client\WebSocket::$fd in /home/vagrant/code/easyswoole/App/Websocket/WebSocketParser.php:50
+Stack trace:
+#0 /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(115): App\Websocket\WebSocketParser->encode(Object(EasySwoole\Socket\Bean\Response), Object(EasySwoole\Socket\Client\WebSocket))
+#1 /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(96): EasySwoole\Socket\Dispatcher->response(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Client\WebSocket), Object(EasySwoole\Socket\Bean\Response))
+#2 /home/vagrant/code/easyswoole/EasySwooleEvent.php(73): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"class":"Index...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /home/vagrant/code/easyswoole/vendor/easyswoole/easyswoole/s in /home/vagrant/code/easyswoole/App/Websocket/WebSocketParser.php on line 50
+[2019-12-28 05:58:07 $2916.0]	WARNING	swManager_check_exit_status: worker#0[pid=2919] abnormal exit, status=255, signal=0
+[2019-12-28 05:58:34 *2939.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Cannot use object of type EasySwoole\Socket\Client\WebSocket as array in /home/vagrant/code/easyswoole/App/Websocket/WebSocketParser.php:50
+Stack trace:
+#0 /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(115): App\Websocket\WebSocketParser->encode(Object(EasySwoole\Socket\Bean\Response), Object(EasySwoole\Socket\Client\WebSocket))
+#1 /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(96): EasySwoole\Socket\Dispatcher->response(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Client\WebSocket), Object(EasySwoole\Socket\Bean\Response))
+#2 /home/vagrant/code/easyswoole/EasySwooleEvent.php(73): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Server), '{"class":"Index...', Object(Swoole\WebSocket\Frame))
+#3 [internal function]: EasySwoole\EasySwoole\EasySwooleEvent::EasySwoole\EasySwoole\{closure}(Object(Swoole\WebSocket\Server), Object(Swoole\WebSocket\Frame))
+#4 /home/vagrant/code/easyswoole/vendor/easyswoole/easyswoole/src/ in /home/vagrant/code/easyswoole/App/Websocket/WebSocketParser.php on line 50
+[2019-12-28 05:58:34 $2936.0]	WARNING	swManager_check_exit_status: worker#0[pid=2939] abnormal exit, status=255, signal=0
+[2019-12-28 06:03:50 *2997.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught TypeError: Argument 1 passed to EasySwoole\Spl\SplBean::toArray() must be of the type array or null, object given, called in /home/vagrant/code/easyswoole/App/Websocket/WebSocketParser.php on line 50 and defined in /home/vagrant/code/easyswoole/vendor/easyswoole/spl/src/SplBean.php:54
+Stack trace:
+#0 /home/vagrant/code/easyswoole/App/Websocket/WebSocketParser.php(50): EasySwoole\Spl\SplBean->toArray(Object(EasySwoole\Socket\Client\WebSocket))
+#1 /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(115): App\Websocket\WebSocketParser->encode(Object(EasySwoole\Socket\Bean\Response), Object(EasySwoole\Socket\Client\WebSocket))
+#2 /home/vagrant/code/easyswoole/vendor/easyswoole/socket/src/Dispatcher.php(96): EasySwoole\Socket\Dispatcher->response(Object(Swoole\WebSocket\Server), Object(EasySwoole\Socket\Client\WebSocket), Object(EasySwoole\Socket\Bean\Response))
+#3 /home/vagrant/code/easyswoole/EasySwooleEvent.php(73): EasySwoole\Socket\Dispatcher->dispatch(Object(Swoole\WebSocket\Se in /home/vagrant/code/easyswoole/vendor/easyswoole/spl/src/SplBean.php on line 54
+[2019-12-28 06:03:50 $2994.0]	WARNING	swManager_check_exit_status: worker#0[pid=2997] abnormal exit, status=255, signal=0
+[2019-12-28 06:08:02 $3014.0]	WARNING	swManager_check_exit_status: worker#1[pid=3018] abnormal exit, status=0, signal=11
+A bug occurred in Swoole-v4.4.13RC2, please report it.
+The Swoole developers probably don't know about it,
+and unless you report it, chances are it won't be fixed.
+You can read How to report a bug doc before submitting any bug reports:
+>> https://github.com/swoole/swoole-src/blob/master/.github/ISSUE.md 
+Please do not send bug reports in the mailing list or personal letters.
+The issue page is also suitable to submit feature requests.
+
