@@ -54,6 +54,7 @@
         });
     }
     //加载弹出层组件
+    
     layui.use('layer',function(){
 
         var layer = layui.layer;
