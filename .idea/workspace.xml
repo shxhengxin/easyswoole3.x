@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf0f755-5a3d-4ab6-aaf3-b8fb947cb1ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/HttpController/Admin/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/HttpController/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/HttpController/CommonController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Websocket/Controller/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Websocket/WebSocketEvents.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Websocket/WebSocketParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/easyswoole.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyswoole.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/HttpController/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/HttpController/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/route/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/route/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EasySwooleEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/EasySwooleEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Websocket/WebSocketEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Websocket/WebSocketEvents.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/swoole.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/swoole.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +126,7 @@
       <workItem from="1577353501175" duration="1965000" />
       <workItem from="1577418236852" duration="3184000" />
       <workItem from="1577428993501" duration="599000" />
-      <workItem from="1577433822561" duration="15876000" />
+      <workItem from="1577433822561" duration="16539000" />
     </task>
     <servers />
   </component>
