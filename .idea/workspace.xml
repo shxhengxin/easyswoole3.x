@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf0f755-5a3d-4ab6-aaf3-b8fb947cb1ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/App/HttpController/Admin/Login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Server/RequestMethod.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Websocket/WebSocketEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Websocket/WebSocketEvents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/HttpController/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/route/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/route/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/views/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +25,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +88,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/App/HttpController/admin" />
+    <property name="last_opened_file_path" value="D:/phpstudy/WWW/wshifu-ocs-resque-worker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -126,7 +141,7 @@
       <workItem from="1577353501175" duration="1965000" />
       <workItem from="1577418236852" duration="3184000" />
       <workItem from="1577428993501" duration="599000" />
-      <workItem from="1577433822561" duration="16539000" />
+      <workItem from="1577433822561" duration="21756000" />
     </task>
     <servers />
   </component>

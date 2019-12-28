@@ -23,6 +23,7 @@ class AdminController extends CommonController
      */
     protected function onRequest(?string $action): ?bool
     {
+        //var_dump($action);
         return true;
     }
 

@@ -27,7 +27,7 @@ class Route
 
 
         $this->routeCollector->addGroup("/admin",function (){
-            $this->routeCollector->get("/index","/admin/index/getVideo");
+            $this->routeCollector->get("/login","/admin/login/login");
         });
 
 

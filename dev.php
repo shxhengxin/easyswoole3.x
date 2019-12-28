@@ -18,7 +18,7 @@ return [
             'timeout'=>15
         ]
     ],
-
+    'URL' => 'http://chat.cc',
     'TEMP_DIR' => '/tmp',
     'LOG_DIR' => null
 ];
