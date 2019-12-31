@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12f8779617158bfc40b28e6e15b886c6",
+    "content-hash": "768ef9f83a5006c2a302c83b4d6e4e6c",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -929,6 +929,60 @@
             "time": "2019-12-14T05:03:43+00:00"
         },
         {
+            "name": "easyswoole/session",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/session.git",
+                "reference": "385466fc99179f0d4fe7dd0ca403df592d99719d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/session/zipball/385466fc99179f0d4fe7dd0ca403df592d99719d",
+                "reference": "385466fc99179f0d4fe7dd0ca403df592d99719d",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "easyswoole/http": "^1.2",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "easyswoole/swoole-ide-helper": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Session\\": "src/",
+                    "EasySwoole\\Session\\Test\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "easyswoole component",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "time": "2019-07-28T12:50:22+00:00"
+        },
+        {
             "name": "easyswoole/socket",
             "version": "1.1.10",
             "source": {
@@ -1225,6 +1279,50 @@
                 "swoole"
             ],
             "time": "2019-10-21T07:07:10+00:00"
+        },
+        {
+            "name": "easyswoole/verifycode",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/verifyCode.git",
+                "reference": "7565c70f11290e3119b8c47b756af6f11b67a2ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/verifyCode/zipball/7565c70f11290e3119b8c47b756af6f11b67a2ca",
+                "reference": "7565c70f11290e3119b8c47b756af6f11b67a2ca",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "easyswoole/spl": "^1.0",
+                "ext-gd": "*",
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\VerifyCode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "evalor",
+                    "email": "mipone@foxmail.com"
+                },
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "time": "2019-06-03T07:27:54+00:00"
         },
         {
             "name": "illuminate/container",

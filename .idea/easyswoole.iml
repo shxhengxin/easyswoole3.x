@@ -21,12 +21,14 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/pool" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/redis" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/redis-pool" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/session" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/socket" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/spl" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/task" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/trigger" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/utility" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/validate" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/easyswoole/verifycode" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/container" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/contracts" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/events" />

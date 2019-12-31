@@ -6,3 +6,7 @@ function asset($path) {
     $url = \EasySwoole\EasySwoole\Config::getInstance()->getConf('URL');
     return $url."/Resources/".$path;
 }
+
+
+
+

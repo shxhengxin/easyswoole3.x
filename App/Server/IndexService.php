@@ -5,6 +5,7 @@ namespace App\Server;
 
 
 use App\Model\Admin\VideoModel;
+use EasySwoole\Http\Message\Status;
 use Response\ApiResponse;
 
 class IndexService
@@ -18,6 +19,6 @@ class IndexService
         $list = $model->all();
         $total = $model->lastQueryResult()->getTotalCount();
         $arr = ['total' => $total, 'list' => $list];
-        return ApiResponse::returnResults(200,"成功",$arr);
+        return ApiResponse::returnResults(Status::CODE_OK,"成功",$arr);
     }
 }

@@ -17,6 +17,7 @@ class RequestMethod
             'post' => self::POST,
             'get' => self::GET,
             'put' => self::PUT,
+            'delete' => self::DELETE
         ];
     }
 }

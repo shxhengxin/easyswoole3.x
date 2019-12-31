@@ -7,7 +7,9 @@
         "easyswoole/redis-pool": "^2.0",
         "easyswoole/ddl": "^1.0",
         "easyswoole/socket": "^1.1",
-        "duncan3dc/blade": "^4.8"
+        "duncan3dc/blade": "^4.8",
+        "easyswoole/session": "^1.0",
+        "easyswoole/verifycode": "3.x"
     },
     "autoload": {
         "psr-4": {

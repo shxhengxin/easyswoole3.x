@@ -12,6 +12,17 @@ use duncan3dc\Laravel\BladeInstance;
  */
 class AdminController extends CommonController
 {
+
+    /**
+     * @desc 无需登录，访问的路由
+     * @var array
+     */
+    private $basicAction = [
+        '/admin/login',
+        '/admin/register',
+        '/admin/upload',
+    ];
+
     /**
      * Created by PhpStorm.
      * @Desc:做权限认证
@@ -23,7 +34,15 @@ class AdminController extends CommonController
      */
     protected function onRequest(?string $action): ?bool
     {
-        //var_dump($action);
+        if(!parent::onRequest($action)){
+            return  false;
+        }
+        $path = $this->request()->getSwooleRequest()->server['request_uri'];
+        //无需登录直接访问
+        if(!in_array($path,$this->basicAction)) {
+
+        }
+
         return true;
     }
 

@@ -871,3 +871,13 @@ You can read How to report a bug doc before submitting any bug reports:
 Please do not send bug reports in the mailing list or personal letters.
 The issue page is also suitable to submit feature requests.
 
+[2019-12-30 03:55:54 *13010.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Class App\Session\RedisHandler contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (EasySwoole\Http\AbstractInterface\Controller::index) in /home/vagrant/code/easyswoole/App/Session/RedisHandler.php on line 9
+[2019-12-30 03:55:54 $13007.0]	WARNING	swManager_check_exit_status: worker#0[pid=13010] abnormal exit, status=255, signal=0
+[2019-12-31 02:52:51 #18023.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096547]
+[2019-12-31 02:56:48 #18144.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096547]
+[2019-12-31 02:57:08 #18144.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096547]
+[2019-12-31 02:59:01 #18144.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096547]
+[2019-12-31 03:00:36 #18333.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096547]
+[2019-12-31 08:13:19 *19607.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: A function with return type must return a value (did you mean "return null;" instead of "return;"?) in /home/vagrant/code/easyswoole/App/HttpController/Admin/Login.php on line 51
+[2019-12-31 08:13:19 $19604.0]	WARNING	swManager_check_exit_status: worker#0[pid=19607] abnormal exit, status=255, signal=0
+[2019-12-31 09:34:10 #2583.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096590]

@@ -7,7 +7,9 @@ namespace App\HttpController;
 use EasySwoole\EasySwoole\ServerManager;
 use EasySwoole\FastCache\Cache;
 use EasySwoole\Http\AbstractInterface\Controller;
+use EasySwoole\Http\Message\Status;
 use EasySwoole\Http\Request;
+use EasySwoole\Validate\Validate;
 
 class CommonController extends Controller
 {
@@ -15,6 +17,28 @@ class CommonController extends Controller
     function index()
     {
         // TODO: Implement index() method.
+    }
+
+    protected function onRequest(?string $action): ?bool
+    {
+        $ret = parent::onRequest($action);
+
+        if($ret === false) return  false;
+        $validate = $this->validateRule($action);
+
+        if($validate) {
+            $ret = $this->validate($validate);
+            if($ret == false) {
+                $this->writeJson(Status::CODE_BAD_REQUEST,null,"{$validate->getError()->getFieldAlias()}:{$validate->getError()->getErrorRuleMsg()}");
+                return  false;
+            }
+        }
+        return true;
+    }
+
+    protected function validateRule(?string $action):?Validate
+    {
+
     }
 
     /**

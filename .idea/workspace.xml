@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf0f755-5a3d-4ab6-aaf3-b8fb947cb1ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/App/Server/Upload/UploadService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Server/VerifyCode/CodeService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyswoole.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyswoole.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/Admin/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/HttpController/Admin/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/HttpController/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/HttpController/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/CommonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/HttpController/CommonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/HttpController/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Server/IndexService.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Server/IndexService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Server/RequestMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Server/RequestMethod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/route/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/route/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/swoole.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/swoole.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Storage/framework/cache/views/9f9dafee5eb3a926e1472b340b6c95f10a2244f5.php" beforeDir="false" afterPath="$PROJECT_DIR$/Storage/framework/cache/views/9f9dafee5eb3a926e1472b340b6c95f10a2244f5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/bin/php-parse" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,13 +96,15 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/session" />
+      <path value="$PROJECT_DIR$/vendor/easyswoole/verifycode" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UxlRqfRHCE8ndh7q2r4IfoFWJL" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/phpstudy/WWW/wshifu-ocs-resque-worker" />
+    <property name="last_opened_file_path" value="D:/phpstudy/WWW/wshifu-ocs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -131,7 +157,9 @@
       <workItem from="1577353501175" duration="1965000" />
       <workItem from="1577418236852" duration="3184000" />
       <workItem from="1577428993501" duration="599000" />
-      <workItem from="1577433822561" duration="22017000" />
+      <workItem from="1577433822561" duration="23568000" />
+      <workItem from="1577668286048" duration="16235000" />
+      <workItem from="1577758545978" duration="12909000" />
     </task>
     <servers />
   </component>
@@ -143,7 +171,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

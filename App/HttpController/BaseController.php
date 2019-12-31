@@ -26,6 +26,7 @@ class BaseController extends CommonController
      */
     protected function onRequest(?string $action): ?bool
     {
+        parent::onRequest($action);
         return true;
     }
 

@@ -50,11 +50,11 @@
             shadeClose: true,
             shade: 0.8,
             area: ['40%', '70%'],
-            content: '/register' //iframe的url
+            content: '/admin/register' //iframe的url
         });
     }
     //加载弹出层组件
-    
+
     layui.use('layer',function(){
 
         var layer = layui.layer;

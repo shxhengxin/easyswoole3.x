@@ -8,6 +8,7 @@ use App\route\Route;
 use EasySwoole\EasySwoole\Logger;
 use EasySwoole\EasySwoole\ServerManager;
 use EasySwoole\Http\AbstractInterface\AbstractRouter;
+use EasySwoole\Http\Message\Status;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
 use FastRoute\RouteCollector;
@@ -23,10 +24,10 @@ class Router extends AbstractRouter
     {
         $this->setGlobalMode(true);
         $this->setRouterNotFoundCallBack(function (Request $request, Response $response) {
-            $this->ResponseJson($response,0,"未找到路由匹配");
+            $this->ResponseJson($response,Status::CODE_NOT_FOUND,"未找到路由匹配");
         });
         $this->setMethodNotAllowCallBack(function (Request $request, Response $response) {
-            $this->ResponseJson($response,0,"未找到处理方法");
+            $this->ResponseJson($response,Status::CODE_NOT_FOUND,"未找到处理方法");
         });
 
         Route::getInstance($routeCollector)->route();

@@ -20,6 +20,7 @@
             <div class="logo_box">
                 <h3>登录 Jin-chat</h3>
                 <form action="#" name="f" method="post">
+
                     <input type="password" style="position:absolute;top:-999px"/>
                     <div class="input_outer">
                         <span class="u_user"></span>
@@ -49,10 +50,11 @@
             shadeClose: true,
             shade: 0.8,
             area: ['40%', '70%'],
-            content: '/register' //iframe的url
+            content: '/admin/register' //iframe的url
         });
     }
     //加载弹出层组件
+
     layui.use('layer',function(){
 
         var layer = layui.layer;
@@ -73,7 +75,7 @@
             var username = $(" input[ name='username' ] ").val();
             var password = $(" input[ name='password' ] ").val();
             $.ajax({
-                url:"login",
+                url:"/admin/login",
                 data:{"username":username,"password":password},
                 type:"post",
                 dataType:"json",

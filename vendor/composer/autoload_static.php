@@ -56,6 +56,7 @@ class ComposerStaticInit53d1fb9f8521dfe66111886e9ac7f93e
         ),
         'E' => 
         array (
+            'EasySwoole\\VerifyCode\\' => 22,
             'EasySwoole\\Validate\\' => 20,
             'EasySwoole\\Utility\\' => 19,
             'EasySwoole\\Trigger\\' => 19,
@@ -63,6 +64,8 @@ class ComposerStaticInit53d1fb9f8521dfe66111886e9ac7f93e
             'EasySwoole\\Spl\\Test\\' => 20,
             'EasySwoole\\Spl\\' => 15,
             'EasySwoole\\Socket\\' => 18,
+            'EasySwoole\\Session\\Test\\' => 24,
+            'EasySwoole\\Session\\' => 19,
             'EasySwoole\\Redis\\' => 17,
             'EasySwoole\\RedisPool\\' => 21,
             'EasySwoole\\Pool\\' => 16,
@@ -186,6 +189,10 @@ class ComposerStaticInit53d1fb9f8521dfe66111886e9ac7f93e
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'EasySwoole\\VerifyCode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/verifycode/src',
+        ),
         'EasySwoole\\Validate\\' => 
         array (
             0 => __DIR__ . '/..' . '/easyswoole/validate/src',
@@ -213,6 +220,14 @@ class ComposerStaticInit53d1fb9f8521dfe66111886e9ac7f93e
         'EasySwoole\\Socket\\' => 
         array (
             0 => __DIR__ . '/..' . '/easyswoole/socket/src',
+        ),
+        'EasySwoole\\Session\\Test\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/session/tests',
+        ),
+        'EasySwoole\\Session\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/session/src',
         ),
         'EasySwoole\\Redis\\' => 
         array (
