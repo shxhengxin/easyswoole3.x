@@ -8,17 +8,17 @@ use App\HttpController\AdminController;
 use App\Server\RequestMethod;
 use App\Server\Upload\UploadService;
 use App\Server\VerifyCode\CodeService;
+
 use EasySwoole\Http\Message\Status;
-use EasySwoole\Pool\Manager;
 use EasySwoole\Validate\Validate;
-use EasySwoole\VerifyCode\Conf;
-use EasySwoole\VerifyCode\VerifyCode;
 
 
 class Login extends AdminController
 {
     public function login()
     {
+
+
         if($this->request()->getMethod() == RequestMethod::POST) {
             var_dump(111);
         }
@@ -36,8 +36,8 @@ class Login extends AdminController
 
     public function upload()
     {
-        $data = UploadService::upload($this->request()->getUploadedFile("file"));
-        return $this->writeJson($data['status'],$data['list'],$data['msg']);
+        $url = UploadService::upload($this->request());
+        return $this->writeJson(Status::CODE_OK,['src'=>$url],'上传文件成功');
     }
 
 

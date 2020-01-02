@@ -881,3 +881,5 @@ The issue page is also suitable to submit feature requests.
 [2019-12-31 08:13:19 *19607.0]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: A function with return type must return a value (did you mean "return null;" instead of "return;"?) in /home/vagrant/code/easyswoole/App/HttpController/Admin/Login.php on line 51
 [2019-12-31 08:13:19 $19604.0]	WARNING	swManager_check_exit_status: worker#0[pid=19607] abnormal exit, status=255, signal=0
 [2019-12-31 09:34:10 #2583.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096590]
+[2020-01-02 02:03:14 #10084.0]	WARNING	swPort_onRead_http: Content-Length is too big, MaxSize=[2096547]
+[2020-01-02 08:35:05 *12549.0]	NOTICE	swFactoryProcess_finish (ERRNO 1004): send 220 byte failed, because connection[fd=3] is closed

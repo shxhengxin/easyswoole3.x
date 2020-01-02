@@ -9,7 +9,8 @@
         "easyswoole/socket": "^1.1",
         "duncan3dc/blade": "^4.8",
         "easyswoole/session": "^1.0",
-        "easyswoole/verifycode": "3.x"
+        "easyswoole/verifycode": "3.x",
+        "qiniu/php-sdk": "^7.2"
     },
     "autoload": {
         "psr-4": {

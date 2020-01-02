@@ -48,6 +48,7 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/events" />
       <path value="$PROJECT_DIR$/vendor/easyswoole/session" />
       <path value="$PROJECT_DIR$/vendor/easyswoole/verifycode" />
+      <path value="$PROJECT_DIR$/vendor/qiniu/php-sdk" />
     </include_path>
   </component>
 </project>

@@ -2,6 +2,7 @@
 namespace EasySwoole\EasySwoole;
 
 
+use App\Exception\ExceptionHandler;
 use App\Pool\RedisPool;
 use App\Process\Consumer;
 use App\Websocket\WebSocketEvents;
@@ -28,7 +29,9 @@ class EasySwooleEvent implements Event
     {
         // TODO: Implement initialize() method.
         date_default_timezone_set('Asia/Shanghai');
-        //self::loadConf(EASYSWOOLE_ROOT.'/Conf');
+        if(!extension_loaded('yaconf')) {//查看php安装了yaconf扩展
+            self::loadConf(EASYSWOOLE_ROOT.'/Conf');
+        }
 
     }
 
@@ -37,12 +40,11 @@ class EasySwooleEvent implements Event
 
         // TODO: Implement mainServerCreate() method.
         //获取连接数据库配置
-        //$mysqlConfig = Config::getInstance()->getConf('mysql');
-        $mysqlConfig = \Yaconf::get("mysql");
+        $mysqlConfig = getConf("mysql");
+
         DbManager::getInstance()->addConnection(new Connection(new \EasySwoole\ORM\Db\Config($mysqlConfig)));
         //注入redis
-        //$redisConfig = Config::getInstance()->getConf('redis');
-        $redisConfig = \Yaconf::get('redis');
+        $redisConfig = getConf('redis');
         Di::getInstance()->set("REDIS",new Redis(new RedisConfig($redisConfig)));//同步redis
         //连接池
         Manager::getInstance()->register(new RedisPool((new \EasySwoole\Pool\Config()),(new RedisConfig($redisConfig))),'redis');

@@ -81,11 +81,13 @@
             ,before: function(obj){ //obj参数包含的信息，跟 choose回调完全一致，可参见上文。
                 layer.load(); //上传loading
             }
+            ,accept: 'images'
+            ,field: 'image'
             ,done: function(res, index, upload){
                 layer.closeAll('loading'); //关闭loading
-                if (res.code == 0){
-                    $('#yl').attr('src',url + res.data.src).show();
-                    $('input[name="avatar"]').val(res.data.src);
+                if (res.code == 200){
+                    $('#yl').attr('src', res.result.src).show();
+                    $('input[name="avatar"]').val(res.result.src);
                 }else{
                     layer.msg(res.msg,function(){});
                 }

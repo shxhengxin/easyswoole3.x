@@ -11,6 +11,7 @@ class ComposerStaticInit53d1fb9f8521dfe66111886e9ac7f93e
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '841780ea2e1d6545ea3a253239d59c05' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -32,6 +33,10 @@ class ComposerStaticInit53d1fb9f8521dfe66111886e9ac7f93e
         'R' => 
         array (
             'Response\\' => 9,
+        ),
+        'Q' => 
+        array (
+            'Qiniu\\' => 6,
         ),
         'P' => 
         array (
@@ -140,6 +145,10 @@ class ComposerStaticInit53d1fb9f8521dfe66111886e9ac7f93e
         'Response\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Response',
+        ),
+        'Qiniu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu',
         ),
         'Psr\\SimpleCache\\' => 
         array (

@@ -5,7 +5,6 @@ namespace App\HttpController\Api;
 
 
 use App\HttpController\BaseController;
-use App\Server\IndexService;
 use EasySwoole\Component\Di;
 use EasySwoole\Pool\Manager;
 
@@ -23,8 +22,7 @@ class Index extends BaseController
 
     public function getVideo()
     {
-         $arr = (new IndexService())->getVideo();
-         return $this->writeJson($arr['status'],$arr['list'],$arr['msg']);
+
     }
 
 
